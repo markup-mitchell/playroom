@@ -1,3 +1,16 @@
+@font-face { /* included since it's referenced in the SVG */
+  font-family: 'Odin';
+  src: url('./assets/Odin.otf') format('opentype');
+  font-weight: normal;
+}
+
+:root {
+   --flap-duration: .2s;
+   --repeat: 4; 
+   --delay: 0s;
+   --direction: alternate;
+}
+
 .flex-container {
   width: 100vw;
   display: flex;
@@ -8,15 +21,7 @@
   width: 60vw;
 }
 
-
 /* LADYBIRDS  */
-
-:root {
-   --flap-duration: .2s;
-   --repeat: 4; 
-   --delay: 0s;
-   --direction: alternate;
-}
 
 .spin {
    transform-origin: center;
@@ -33,22 +38,14 @@
 #lbPrightwing,
 #lbArightwing,
 #lbYrightwing,
-#lbMrightwing {
-   transform-origin: 0% 0%;
-}
-
-#lbAleftwing,
-#lbArightwing {
+#lbMrightwing, 
+#lbAleftwing {
    transform-origin: 0% 0%;
 }
 
 #lbPrightwing {
 transform-origin: 90% 0%;
 }
-
-/* #lbAleftwing {
-   animation: left-flap var(--flap-duration)  var(--repeat) var(--direction) var(--delay);
-} */
 
 .leftFlap {
    animation: left-flap var(--flap-duration)  var(--repeat) var(--direction) var(--delay);
