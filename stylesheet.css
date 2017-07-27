@@ -1,6 +1,11 @@
+.flex-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;  
+}
 
 #logo {
-  width: 80vw;
+  width: 60vw;
 }
 
 
