@@ -1,7 +1,11 @@
-@font-face { /* included since it's referenced in the SVG */
-  font-family: 'Odin';
-  src: url('./assets/Odin.otf') format('opentype');
-  font-weight: normal;
+
+#logo {
+  width: 80vw;
+}
+
+.flex-container {
+  display: flex;  
+  justify-content: center;
 }
 
 :root {
@@ -11,23 +15,10 @@
    --direction: alternate;
 }
 
-.flex-container {
-  width: 100vw;
-  display: flex;
-  justify-content: center;  
-}
-
-#logo {
-  width: 60vw;
-}
 
 /* LADYBIRDS  */
-
-.spin {
-   transform-origin: center;
-   animation: spin 2s 1;
-}  
-
+/* #ORIGIN */
+/* These are really finicky, weird parameters that originate in the SVG */
 #lbPleftwing,
 #lbAleftwing,
 #lbYleftwing,
@@ -35,16 +26,16 @@
    transform-origin: 100% 0%;
 }
 
-#lbPrightwing,
 #lbArightwing,
 #lbYrightwing,
-#lbMrightwing, 
-#lbAleftwing {
+#lbMrightwing,
+#lbAleftwing,
+#lbArightwing {
    transform-origin: 0% 0%;
 }
 
 #lbPrightwing {
-transform-origin: 90% 0%;
+  transform-origin: 90% 0%;
 }
 
 .leftFlap {
@@ -54,6 +45,10 @@ transform-origin: 90% 0%;
 .rightFlap {
    animation: right-flap var(--flap-duration)  var(--repeat) var(--direction) var(--delay);
 }
+.spin {
+   transform-origin: center;
+   animation: spin 2s 1;
+}  
    
 
 /* WING FLAPS */
