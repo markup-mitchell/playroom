@@ -23,7 +23,6 @@
 #lbYleftwing,
 #lbMleftwing {
    transform-origin: 100% 0%;
-/*    animation: left-flap var(--flap-duration) var(--repeat) var(--direction) var(--delay); */
 }
 
 #lbPrightwing,
@@ -31,7 +30,6 @@
 #lbYrightwing,
 #lbMrightwing {
    transform-origin: 0% 0%;
-/*    animation: right-flap var(--flap-duration)  var(--repeat) var(--direction) var(--delay); */
 }
 
 #lbAleftwing,

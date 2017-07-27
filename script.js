@@ -27,7 +27,8 @@ function random(array) {
    return array[Math.floor(Math.random() * array.length)];
 }
 
-// window.setInterval(makeFlap(random(LADYBIRD), 2000);
+setInterval(function(){makeFlap(random(LADYBIRD))},2500);
+setInterval(function(){spin(random(LADYBIRD))},3000);
 
 
    
