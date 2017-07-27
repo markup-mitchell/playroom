@@ -2,3 +2,50 @@
 #logo {
   width: 80vw;
 }
+
+#lbM {
+   width: 30vw;
+}
+
+
+#lbP-leftwing,
+#lbY-leftwing,
+#lbM-leftwing {
+   transform-origin: 90% 0%;
+   animation: left-flap .3s infinite alternate;
+}
+
+#lbP-rightwing {
+   transform-origin: 80% 0%;
+   animation: right-flap .3s infinite alternate;
+}
+
+#lbA-rightwing,
+#lbY-rightwing,
+#lbM-rightwing {
+   transform-origin: 0% 0%;
+   animation: right-flap .3s infinite alternate;
+}
+
+#lbA-leftwing {
+   transform-origin: 0% 0%;
+   animation: left-flap .3s infinite alternate;
+}
+
+#lbA-rightwing {
+   transform-origin: 0% 0%;
+   animation: right-flap .3s infinite alternate;
+}
+
+
+@keyframes right-flap {
+   100% {
+     transform: rotate(-30deg);  
+   }
+}
+
+@keyframes left-flap {
+   100% {
+     transform: rotate(30deg); 
+   }
+}
