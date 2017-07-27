@@ -44,5 +44,5 @@ function setQuote(){
   let selection = random(QUOTE);
   let quote = selection[0];
   let parent = selection[1];
-  quoteBox.innerHTML = quote + '<br /><br />' + '- ' + parent; 
+  quoteBox.innerHTML = '"' + quote + '"' + '<br /><br />' + '- ' + parent; 
 }
