@@ -29,6 +29,20 @@ function random(array) {
 
 setInterval(function(){makeFlap(random(LADYBIRD))},2500);
 setInterval(function(){spin(random(LADYBIRD))},3000);
+setInterval(setQuote,5000);
 
+const QUOTE = [
+  ['I know my son is safe and loved at the Playroom', 'Mark Mitchell'],
+  ['Keir really engages with the activity topics', 'Mark Mitchell'],
+  ['The children get delicious, healthy food', 'Camille Warrington'],
+  ['Amazing standard of care!', 'Camille Warrington']
+]
 
-   
+const quoteBox = document.querySelector('.quotes');
+
+function setQuote(){
+  let selection = random(QUOTE);
+  let quote = selection[0];
+  let parent = selection[1];
+  quoteBox.innerHTML = quote + '<br /><br />' + '- ' + parent; 
+}
