@@ -7,14 +7,35 @@
 
 /*body {font-family: 'Josefin Sans'}*/
 
+section {
+  font-family: sans-serif;
+  font-size: 2vw;
+}
+
+h1 {
+  font-family: 'Josefin Sans';
+  font-size: 3vw;
+}
+
+
 #logo {
-  text-shadow: -2px 3px 8px white;
+  text-shadow: -2px 3px 8px rgba(255,255,255,.6);
   width: 80vw;
 }
 
 .flex-container {
   display: flex;  
   justify-content: center;
+}
+#main-container {
+  padding: 0 5vw 0 5vw;
+}
+
+#map {
+  width: 40vw;
+  height: auto;
+  margin: 30px;
+  box-shadow: 5px 5px 9px grey;
 }
 
 :root {
