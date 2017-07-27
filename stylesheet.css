@@ -33,8 +33,8 @@ h1 {
 
 
 body {
-  background-image: url('.assets/clouds.png');
-  /*background-image: url('https://cdn.pixabay.com/photo/2014/04/03/11/37/landscape-312028_960_720.png');*/
+  background-image: url('./assets/clouds.png');
+  /* https://cdn.pixabay.com/photo/2014/04/03/11/37/landscape-312028_960_720.png */
   background-repeat: no-repeat;
   background-size: cover;
   
