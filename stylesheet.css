@@ -8,8 +8,8 @@
 /*body {font-family: 'Josefin Sans'}*/
 
 section {
-  font-family: sans-serif;
-  font-size: 2vw;
+ font-family: 'Josefin Sans', cursive;
+ font-size: 2vw;
 }
 
 h1 {
@@ -17,10 +17,36 @@ h1 {
   font-size: 3vw;
 }
 
+.quotes {
+  font-family: 'Josefin Sans';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20vw;
+  /*background-color: pink;*/
+  padding: 2vw;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+
+
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/14/50/clouds-148904_960_720.png');
+  /*background-image: url('https://cdn.pixabay.com/photo/2014/04/03/11/37/landscape-312028_960_720.png');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ /*background: linear-gradient(#F78154, #F2C14E);*/
+ /*background: linear-gradient(#7FDBFF, #0074D9);*/
+ /*background: linear-gradient(#39CCCC, #3D9970);*/
+ color: black;
+}
 
 #logo {
-  text-shadow: -2px 3px 8px rgba(255,255,255,.6);
-  width: 80vw;
+  /*text-shadow: -2px 3px 8px rgba(255,255,255,.6);*/
+  width: 50vw;
 }
 
 .flex-container {
@@ -28,16 +54,19 @@ h1 {
   justify-content: center;
 }
 #main-container {
-  padding: 0 5vw 0 5vw;
+  padding: 2vw 5vw 0 5vw;
 }
 
 #map {
-  width: 40vw;
+  width: 30vw;
   height: auto;
   margin: 30px;
-  box-shadow: 5px 5px 9px grey;
+  box-shadow: 5px 10px 12px rgba(100,100,100,.5);
+  /*border: solid #666;*/
 }
 
+footer {
+}
 :root {
    --flap-duration: .2s;
    --repeat: 4; 
