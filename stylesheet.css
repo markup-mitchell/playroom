@@ -3,41 +3,60 @@
   width: 80vw;
 }
 
-#lbM {
-   width: 30vw;
+
+/* LADYBIRDS  */
+
+:root {
+   --flap-duration: .2s;
+   --repeat: 4; 
+   --delay: 0s;
+   --direction: alternate;
 }
 
+.spin {
+   transform-origin: center;
+   animation: spin 2s 1;
+}  
 
-#lbP-leftwing,
-#lbY-leftwing,
-#lbM-leftwing {
-   transform-origin: 90% 0%;
-   animation: left-flap .3s infinite alternate;
+#lbPleftwing,
+#lbAleftwing,
+#lbYleftwing,
+#lbMleftwing {
+   transform-origin: 100% 0%;
+/*    animation: left-flap var(--flap-duration) var(--repeat) var(--direction) var(--delay); */
 }
 
-#lbP-rightwing {
-   transform-origin: 80% 0%;
-   animation: right-flap .3s infinite alternate;
-}
-
-#lbA-rightwing,
-#lbY-rightwing,
-#lbM-rightwing {
+#lbPrightwing,
+#lbArightwing,
+#lbYrightwing,
+#lbMrightwing {
    transform-origin: 0% 0%;
-   animation: right-flap .3s infinite alternate;
+/*    animation: right-flap var(--flap-duration)  var(--repeat) var(--direction) var(--delay); */
 }
 
-#lbA-leftwing {
+#lbAleftwing,
+#lbArightwing {
    transform-origin: 0% 0%;
-   animation: left-flap .3s infinite alternate;
 }
 
-#lbA-rightwing {
-   transform-origin: 0% 0%;
-   animation: right-flap .3s infinite alternate;
+#lbPrightwing {
+transform-origin: 90% 0%;
 }
 
+/* #lbAleftwing {
+   animation: left-flap var(--flap-duration)  var(--repeat) var(--direction) var(--delay);
+} */
 
+.leftFlap {
+   animation: left-flap var(--flap-duration)  var(--repeat) var(--direction) var(--delay);
+}
+
+.rightFlap {
+   animation: right-flap var(--flap-duration)  var(--repeat) var(--direction) var(--delay);
+}
+   
+
+/* WING FLAPS */
 @keyframes right-flap {
    100% {
      transform: rotate(-30deg);  
@@ -47,5 +66,12 @@
 @keyframes left-flap {
    100% {
      transform: rotate(30deg); 
+   }
+}
+
+/* SPIN */
+@keyframes spin {
+   100% {
+      transform: rotate(360deg)
    }
 }
